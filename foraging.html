@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<script>
+function generateNumber() {
+var number = document.getElementById("generate");
+number.innerHTML = Math.floor((Math.random()* 12));
+}
+</script>
+
+<style>
+
+button {
+display: block;
+padding: 10px;
+font-size: 16px;
+text-align: center;
+border: 5px;
+}
+ 
+button:active {
+transform: translateY(2px);
+}
+
+.column {
+width: 400px;
+float: center;
+text-align: justify;
+}
+
+th, td {
+text-align: center;
+}
+
+</style>
+
+<body>
+
+<center><b><font size="+3">Foraging</font></b>
+<br><br>
+
+<div class="column">
+While traveling through the wilderness, characters may search for food to conserve their resources by <b>foraging</b>. They may do this while travelling or staying put in camp; either way, the players must make their normal number of encounter rolls in addition to any encounters they may have to deal with while foraging. This means that the party may encounter <i>many</i> deadly animals over the course of a day if each player who attempts to forage rolls poorly. If they encounter an animal and kill it, they may harvest 1d4 rations per HD from the body.
+<br><br>
+</div>
+
+<center><button onclick="generateNumber()"><div class="bt">GENERATE A NUMBER</button>
+<p id="generate"></p>
+<br>
+<br>
+
+<table>
+<caption><b>Results</b></caption>
+<tr>
+<td>Roll</td>
+<td>Result</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1d4 rations</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1d2 rations</td>
+</tr>
+<tr>
+<td>2-9</td>
+<td>No finds</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="encounterpage.html">Encounter</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td>As 11,<br> -3 to hostility roll</td>
+</table>
+
+ <br><br>
+
+<center><u><font size="-1"><a href="index.html">Home</a></font></u></center>
+
