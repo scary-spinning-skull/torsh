@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+ 
+<style>
+ 
+button {
+display: block;
+padding: 10px;
+font-size: 16px;
+text-align: center;
+border: 5px;
+}
+ 
+button:active {
+transform: translateY(2px);
+}
+ 
+.column {
+flex: 50%;
+padding 15px;
+}
+ 
+.row {
+display: flex;
+padding 35px;
+}
+ 
+.bt {
+font-size: 16px;
+font-weight: bold;
+}
+ 
+p {
+margin-bottom: 2px;
+margin-top: 2px;
+}
+ 
+table {
+padding: 15px;
+align: center;
+}
+ 
+td {
+border: 1px solid #000;
+}
+ 
+th, td {
+text-align: center;
+}
+ 
+stats {
+max-width: 600px;
+}
+
+table {
+max-width: 600px;
+}
+ 
+</style>
+ 
+<script>
+function generateNumber() {
+var number = document.getElementById("generate");
+number.innerHTML = Math.floor((Math.random()* 100));
+}
+</script>
+<body>
+<center>
+
+<a href="index.html"><img src="ankylosaurus.jpg" width="500px" /></a>
+
+<br><br>
+
+<b><u><font size="20px" color="#088f03">LONDON ENCOUNTERS</font></u></b>
+ 
+<br><br>
+<button onclick="generateNumber()"><div class="bt">GENERATE A NUMBER</button>
+<p id="generate"></p>
+<br>
+<br>
+
+<div class="row">
+<div class="column">
+<center>
+<p><font size="+1"><b><u>DAYTIME STREETS</u></b></font>
+<br>
+<br>
+<p><a href="#streeturchin">1-8</a>
+<p><a href="#truantofficer">9-11</a>
+<p><a href="#police">12-18</a>
+<p><a href="#"></a>
+<p><a href="#"></a>
+
+
+</div>
+</div>
+
+<br>
+<br>
+
+<table>
+<caption>
+<a name="police"><u>Police Officers</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>9</td>
+<td>3d6</td>
+<td>Billy Club, .38 revolver</td>
+<td>1d4 subdual; 1d8/1d6</td>
+<td>25'</td>
+<td>1d4</td>
+<td>Fighter 2</td>
+<td>L1</td>
+<td>5 (10 if in a group of 6 or more)</td>
+<td>75</td>
+</tr>
+<tr>
+<td colspan="10">The city guards of London, often referred to as "bobbies". Police are equipped with firearms and devices which allow them to summon an additional 1d4 comrades within five minutes during the day (5% chance of arrival within 3 turns) and 10 minutes at night. They tend to look down on "tourists" and may confront individuals who look or behave strangely.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<caption>
+<a name="#streeturchin"><u>Street Urchin</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>5</td>
+<td>1d4</td>
+<td>1 slingshot (as sling)</td>
+<td>0-1</td>
+<td>50'</td>
+<td>1d10</td>
+<td>Thief 1</td>
+<td>L3</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td colspan="10">A child beggar. Urchins move in large groups which commit petty crimes. They are very skittish but friendly to anti-authority figures such as people who fight police.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<caption>
+<a name="truantofficer"><u>Truant Officer</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>8</td>
+<td>1d8</td>
+<td>1 billy club</td>
+<td>1d4 subdual</td>
+<td>30'</td>
+<td>2</td>
+<td>Fighter 2</td>
+<td>L1</td>
+<td>7</td>
+<td>50</td>
+</tr>
+<tr>
+<td colspan="10">Truant officers are special police officers tasked with rounding up street urchins and forcing them to go to a torture dungeon (school). They are generally unsympathetic to pleas that the weather is too nice to be inside, that it's Sunday, and so on.</td>
+</tr>
+</table>
+
+</body>
+ 
+<!--
+<table>
+<caption>
+<a name=""><u></u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="10"></td>
+</tr>
+</table>
+-->
+ 
+
+</html>
