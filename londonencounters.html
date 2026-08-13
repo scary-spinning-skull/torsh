@@ -98,6 +98,7 @@ number.innerHTML = Math.floor((Math.random()* 100));
 <p><a href="#irish">75-77</a>
 <p><a href="#libyan">78-79</a>
 <p><a href="#gang">80-87</a>
+<p><a href="#metal">88-91</a>
 
 </div>
 
@@ -120,7 +121,8 @@ number.innerHTML = Math.floor((Math.random()* 100));
 <br>
 <p><a href="#streeturchin">1-10</a>
 <p><a href="#police">11-25</a>
-<p><a href="#"></a>
+<p><a href="#bum">26-31</a>
+<p><a href="#mugger">32-35</a>
 
 </div>
 
@@ -177,6 +179,40 @@ number.innerHTML = Math.floor((Math.random()* 100));
 
 <table>
 <caption>
+<a name="bum"><u>Bum/Wino</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>3</td>
+<td>1d6</td>
+<td>Unarmed</td>
+<td>0-2</td>
+<td>25'</td>
+<td>1</td>
+<td>Thief 2</td>
+<td>None</td>
+<td>11</td>
+<td>50</td>
+</tr>
+<tr>
+<td colspan="10">Your average booze-soaked bum. There is a 25% chance that he is actually a <a href="#mugger">mugger</a>.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<caption>
 <a name="bus"><u>Double-Decker Bus</u></a>
 </caption>
 <tr>
@@ -211,7 +247,7 @@ number.innerHTML = Math.floor((Math.random()* 100));
 
 <table>
 <caption>
-<a name="gang"><u>Street Gangsters</u></a>
+<a name="gang"><u>Gangsters</u></a>
 </caption>
 <tr>
 <th>AC</th>
@@ -271,6 +307,74 @@ number.innerHTML = Math.floor((Math.random()* 100));
 </tr>
 <tr>
 <td colspan="10">Hackney cabs give people romantic rides in horse-drawn carts. Their hackney license does not allow them to stray far from the park.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<caption>
+<a name="locals"><u>Hookers</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>6</td>
+<td>1d6</td>
+<td>Unarmed</td>
+<td>0-2</td>
+<td>20'</td>
+<td>1d3</td>
+<td>Thief 1</td>
+<td>L2</td>
+<td>8</td>
+<td>25</td>
+</tr>
+<tr>
+<td colspan="10">A sex worker who has to live under the sex-negative regime of 1985 London. They are very worried about a new plague that's spread through coitus and will be relustant to sell their goods to bizarre foreigners, especially without a prophylactic.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<caption>
+<a name="mugger"><u>Muggers</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>10</td>
+<td>3d6+4</td>
+<td>+1 switchblade (as dagger), .38 revolver</td>
+<td>1d4 slashing, 1/8-1/6 (only has 1d3 bullets)</td>
+<td>25'</td>
+<td>1d2</td>
+<td>Thief 4</td>
+<td>L2</td>
+<td>10</td>
+<td>75</td>
+</tr>
+<tr>
+<td colspan="10">Exactly like the muggers of the 14th century.</td>
 </tr>
 </table>
 
@@ -483,6 +587,40 @@ number.innerHTML = Math.floor((Math.random()* 100));
 
 <table>
 <caption>
+<a name="metal"><u>Heavy Metal Head</u></a>
+</caption>
+<tr>
+<th>AC</th>
+<th>HD</th>
+<th>No. Attacks</th>
+<th>Damage</th>
+<th>Move</th>
+<th>No. Appearing</th>
+<th>Save As</th>
+<th>Treasure Type</th>
+<th>Morale</th>
+<th>XP</th>
+</tr>
+<td>10</td>
+<td>3d6</td>
+<td>+1 bicycle chain</td>
+<td>2d4 bludgeoning</td>
+<td>25'</td>
+<td>1d6</td>
+<td>Fighter 2</td>
+<td>L2</td>
+<td>10</td>
+<td>35</td>
+</tr>
+<tr>
+<td colspan="10">Members of a community who listen to music with a lot of shouting. They are enemies of <a href="#punk">punk rockers</a> for obscure artistic reasons and they may come to blows with each other during an encounter.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<caption>
 <a name="streeturchin"><u>Street Urchin</u></a>
 </caption>
 <tr>
@@ -645,7 +783,7 @@ number.innerHTML = Math.floor((Math.random()* 100));
 <td>50</td>
 </tr>
 <tr>
-<td colspan="10">Truant officers are special police officers tasked with rounding up street urchins and forcing them to go to a torture dungeon (school). They are unsympathetic to pleas that the weather is too nice to be inside, that it's Sunday, and so on.</td>
+<td colspan="10">Truant officers are special police officers tasked with rounding up street urchins and forcing them to go to a torture dungeon (school). They are generally unsympathetic to pleas that the weather is too nice to be inside, that it's Sunday, and so on.</td>
 </tr>
 </table>
 
